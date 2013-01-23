@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GestorLDLActivity!</string>
+    <string name="app_name">Gestor LDL</string>
+    <string name="txvnombre_articulo">Nombre del articulo:</string>
+    <string name="txvprecio">Precio: $</string>
+    <string name="txvestante">Estante: </string>
+    <string name="txvpais_origen">Pais de origen (segun codigo de barras):</string>
+    <string name="txvcodigo_barras">Codigo de barras (EAN13):</string>
+    <string name="txvmodificado">"Modificado por ultima vez el "</string>
+    <string name="si">   Si</string>
+    <string name="no">   No</string>
+    <string name="txvVenta">"En venta: "</string>
+    <string name="txvbusqueda">Mostrar articulos que contengan</string>
+    <string name="txvrango_precios">y cuyos precios oscilen entre</string>
+    <string name="txvdisyuntivo">" y "</string>
+    <string name="btnGuardar">Guardar modificaciones</string>
+    <string name="txvnuevo">Nuevo articulo</string>
+    <string name="btnModificar">Modificar articulo</string>
+    <string name="btnmodifcacion">Modificar articulo</string>
+    <string name="btncatalogo">Ver otros articulos</string>
+
+</resources>

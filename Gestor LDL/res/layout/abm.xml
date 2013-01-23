@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  http://casidiablo.net/scrollview-android/ -->
+                    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/scrollView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.70" >
+
+<LinearLayout
+    android:layout_width="317dp"
+    android:layout_height="509dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvnombre_articulo" />
+
+    <FrameLayout
+        android:id="@+id/frlArticulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spnNombre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <requestFocus />
+        </EditText>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txvPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txvprecio" />
+
+        <EditText
+            android:id="@+id/txtPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txvEstante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txvestante" />
+
+        <Spinner
+            android:id="@+id/cmbEstantes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txvVenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txvVenta" />
+
+        <RadioGroup
+            android:id="@+id/rdgVendible"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/si" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvmodificado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvmodificado" />
+
+    <EditText
+        android:id="@+id/txtModificado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/txvorigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvpais_origen" />
+
+    <EditText
+        android:id="@+id/txtPais"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/txvCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvcodigo_barras" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="13" />
+
+    <TextView
+        android:id="@+id/txvConfirmacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%confirmacion" />
+
+    <ToggleButton
+        android:id="@+id/tglCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="Encender lector"
+        android:textOn="Apagar lector" />
+
+    <VideoView
+        android:id="@+id/vvwCamara"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.54" />
+
+       <LinearLayout
+           android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+           android:layout_weight="0.90"
+           android:orientation="horizontal" >
+
+           <FrameLayout
+               android:id="@+id/frlAcciones"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <Button
+                   android:id="@+id/btnModificar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/btnmodifcacion" />
+
+               <Button
+                   android:id="@+id/btnCatalogo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/btncatalogo" />
+
+           </FrameLayout>
+
+           <FrameLayout
+               android:id="@+id/frlDecisiones"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <Button
+                   android:id="@+id/btnGuardar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/btnGuardar" />
+
+               <Button
+                   android:id="@+id/btnNuevo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txvnuevo" />
+           </FrameLayout>
+       </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
